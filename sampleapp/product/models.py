@@ -24,8 +24,10 @@ class Sale(BaseTimeStamp):
 	price_each = models.DecimalField(max_digits=6, decimal_places=2)
 	total_sale = models.DecimalField(max_digits=10, decimal_places=2)
 	day_id = models.PositiveSmallIntegerField()
+	week_id = models.PositiveSmallIntegerField()
 	month_id = models.PositiveSmallIntegerField()
 	year_id = models.PositiveSmallIntegerField()
+
 
 	class Meta(object):
 		db_table = 'sale'
