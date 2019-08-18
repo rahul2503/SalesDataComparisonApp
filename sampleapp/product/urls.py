@@ -4,5 +4,5 @@ from .versions.v1 import urls as v1_urls
 
 
 urlpatterns = [
-    path('product/', include(v1_urls)),
+    path('v1/', include(v1_urls)),
 ]
